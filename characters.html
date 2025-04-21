@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naruto Characters</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meet the Characters of Naruto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lores.html">Lores</a></li>
+                <li><a href="facts.html">Facts</a></li>
+                <li><a href="characters.html">Characters</a></li>
+                <li><a href="villages.html">Villages</a></li>
+                <li><a href="tailed-beasts.html">Tailed Beasts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Search Bar -->
+        <section class="search-section">
+            <h2>Search for a Character</h2>
+            <input type="text" id="character-search" placeholder="Search by name..." onkeyup="filterCharacters()">
+        </section>
+
+        <!-- Character List -->
+        <section class="character-list">
+            <h2>All Characters</h2>
+            <ul id="character-directory">
+                <!-- Characters will be dynamically added here by JavaScript -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Naruto Fanbase</p>
+    </footer>
+    <script src="scripts/characters.js"></script>
+</body>
+</html>

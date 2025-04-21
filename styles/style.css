@@ -1,0 +1,480 @@
+/* General Styles */
+/* Konoha Background */
+body {
+    background-image: url('../images/konoha.png'); /* Use the Konoha image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white; /* Ensure text is readable */
+    margin: 0;
+    padding: 0;
+}
+
+/* Import the Naruto Font */
+@font-face {
+    font-family: 'NarutoFont';
+    src: url('../fonts/naruto.ttf') format('truetype');
+}
+
+/* Apply the Naruto Font */
+body, header, nav, main, footer {
+    font-family: 'NarutoFont', Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'NarutoFont', Arial, sans-serif;
+    text-transform: uppercase; /* Optional: Makes headings look bold and impactful */
+}
+
+/* Header Styling */
+header {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Layout */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+main h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ff9900; /* Naruto orange */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+main ul {
+    list-style: disc;
+    padding-left: 2rem;
+}
+
+main ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Left Section (Welcome + Quote) */
+.left-section {
+    grid-column: 1 / 2; /* Place in the first column */
+    text-align: left;
+}
+
+.hero {
+    background-image: url('../images/hero-banner.jpg'); /* Add a Naruto-themed banner image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: left; /* Align text to the left */
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero h2 {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.quote {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+}
+
+/* Trivia Section (Left Side) */
+.trivia {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+}
+
+.trivia h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ff9900; /* Naruto orange */
+}
+
+.trivia p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Center Section (Explore Key Sections) */
+.featured {
+    grid-column: 2 / 3; /* Place in the second column */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.featured h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ff9900; /* Naruto orange */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.featured-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Right Section (Antagonists and Akatsuki) */
+.right-section {
+    grid-column: 3 / 4; /* Place in the third column */
+    text-align: left;
+}
+
+.antagonists, .akatsuki {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+}
+
+.antagonists h3, .akatsuki h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #ff9900; /* Naruto orange */
+}
+
+.antagonists ul {
+    list-style: none;
+    padding: 0;
+}
+
+.antagonists ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.more-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #ff9900;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #ff9900;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.more-link:hover {
+    background-color: #ff9900;
+    color: black;
+}
+
+/* Lore Containers */
+.lore-container {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lore-container h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.lore-container p {
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.quote {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quote h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.quote p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Featured Section Styling */
+.featured {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background for contrast */
+    color: white;
+    border-radius: 10px;
+    max-width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.featured h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ff9900; /* Naruto orange */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Featured Cards Layout */
+.featured-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Space between cards */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    width: 280px; /* Slightly larger cards */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.card h4 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.5rem;
+    color: #ff9900; /* Naruto orange */
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card a {
+    color: #ff9900;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #ff9900;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card a:hover {
+    background-color: #ff9900;
+    color: black;
+}
+
+/* Character Grid Layout */
+.character-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.character-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    width: 250px; /* Fixed width for cards */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.character-card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.character-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.character-card h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.5rem;
+    color: #ff9900; /* Naruto orange */
+}
+
+.character-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.character-card a {
+    color: #ff9900;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #ff9900;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.character-card a:hover {
+    background-color: #ff9900;
+    color: black;
+}
+
+/* Footer Navigation Styling */
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+footer nav ul li {
+    margin: 0 15px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+    color: #ff9900; /* Naruto orange */
+}
+
+/* Villages Page Styling */
+.villages {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 10px;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.villages h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ff9900; /* Naruto orange */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Village Grid Layout */
+.village-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.village-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    width: 280px; /* Fixed width for cards */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.village-card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.village-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.village-card h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.5rem;
+    color: #ff9900; /* Naruto orange */
+}
+
+.village-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
